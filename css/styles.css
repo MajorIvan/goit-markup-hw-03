@@ -41,8 +41,7 @@ body {
 /* -------------------- AUXILIARY -------------------- */
 .container {
     width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-inline: 156px;
     margin: 0 auto;
 }
 .section {
@@ -73,14 +72,14 @@ body {
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
 .header > .container {
     display: flex;
     align-items: center;
-    
+    padding-top: 24px;
+    padding-bottom: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-logo {
     color: var(--dark);
@@ -130,8 +129,7 @@ body {
 /* -------------------- HERO -------------------- */
 .hero {
     background-color: var(--dark);
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-block: 192px;
 }
 .hero > .section {
     display: flex;
@@ -175,8 +173,7 @@ body {
 }
 /* -------------------- MERITS -------------------- */
 .merits > .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-block: 120px;
 }
 .merits-list {
 }
@@ -195,8 +192,7 @@ body {
 /* -------------------- TEAM CARDS -------------------- */
 .team {
     background: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-block: 120px;
 }
 .team > .section > .title {
     margin-bottom: 72px;
@@ -212,7 +208,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-top: 32px;;
+    margin-block: 32px;;
 }
 /* -------------------- PORTFOLIO -------------------- */
 .projects {
@@ -221,13 +217,17 @@ body {
 }
 .projects-filters {
     justify-content: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     gap: 24px;
 }
 .filter-btn {
+    display: flex;
+    flex-grow: 0;
     box-sizing: border-box;
     cursor: pointer;
-    padding: 12px 24px;
+    align-items: center;
+    padding-inline: 24px;
+    padding-block: 12px;
     height: 48px;
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
@@ -279,9 +279,7 @@ body {
 /* -------------------- FOOTER -------------------- */
 .footer > .container {
     background: var(--dark);
-    padding-top: 100px;
-    padding-bottom: 100px;
-
+    padding-block: 100px;
 }
 .footer-logo {
     color: #F4F4FD;
