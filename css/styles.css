@@ -40,8 +40,8 @@ body {
 }
 /* -------------------- AUXILIARY -------------------- */
 .container {
-    width: 1440px;
-    padding-inline: 156px;
+    width: 1158px;
+    padding-inline: 15px;
     margin: 0 auto;
 }
 .section {
@@ -130,7 +130,7 @@ body {
     background-color: var(--dark);
     padding-block: 192px;
 }
-.hero > .section {
+.section > .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,7 +170,7 @@ body {
     background: #404BBF;
 }
 /* -------------------- MERITS -------------------- */
-.merits > .section {
+.section > .merits {
     padding-block: 120px;
 }
 .merits-list {
@@ -184,18 +184,20 @@ body {
 .accomplishments {
     padding-bottom: 120px;
 }
-.accomplishments > .section > .title {
+.section > .accomplishments > .title {
     margin-bottom: 72px;
 }
 /* -------------------- TEAM CARDS -------------------- */
+.section > .team > .title {
+    margin-bottom: 72px;
+}
 .team {
     background: #F4F4FD;
     padding-block: 120px;
 }
-.team > .section > .title {
-    margin-bottom: 72px;
-}
 .team-card {
+    width: 265px; 
+    height: 380px;
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -253,6 +255,8 @@ body {
     margin-bottom: 48px;
 }
 .card {
+    width: 360px; 
+    height: 420px;
     background: #FFFFFF;
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -261,7 +265,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-block: 32px;
+    padding-block: 32px;
     padding-inline: 16px;
 }
 .card:active {
@@ -281,7 +285,6 @@ body {
 }
 .footer-logo {
     color: #F4F4FD;
-
 }
 .footer-txt {
     width: 264px;
