@@ -72,13 +72,12 @@ body {
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
-
+    padding-block: 24px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header > .container {
     display: flex;
     align-items: center;
-    padding-block: 24px;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-logo {
     color: var(--dark);
@@ -91,12 +90,13 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand);
-    margin-right: 77px;
+
 }
 .header-nav {
     display: flex;
     align-items: center;
     margin-right: auto;
+    margin-left: 77px;
 }
 .menu {
 }
@@ -130,7 +130,7 @@ body {
     background-color: var(--dark);
     padding-block: 192px;
 }
-.section > .hero {
+.hero > .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,7 +170,7 @@ body {
     background: #404BBF;
 }
 /* -------------------- MERITS -------------------- */
-.section > .merits {
+.merits {
     padding-block: 120px;
 }
 .merits-list {
@@ -184,11 +184,11 @@ body {
 .accomplishments {
     padding-bottom: 120px;
 }
-.section > .accomplishments > .title {
+.accomplishments > .container > .title {
     margin-bottom: 72px;
 }
 /* -------------------- TEAM CARDS -------------------- */
-.section > .team > .title {
+.team > .container > .title {
     margin-bottom: 72px;
 }
 .team {
@@ -208,8 +208,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-block: 32px;
-    margin-inline: 16px;
+    padding-block: 32px;
+    padding-inline: 16px;
 }
 /* -------------------- PORTFOLIO -------------------- */
 .projects {
@@ -278,10 +278,9 @@ body {
     mix-blend-mode: normal;
 }
 /* -------------------- FOOTER -------------------- */
-.footer > .container {
+.footer {
     background: var(--dark);
     padding-block: 100px;
-    height: 310px;
 }
 .footer-logo {
     color: #F4F4FD;
